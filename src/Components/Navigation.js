@@ -86,6 +86,7 @@ border-bottom-left-radius : 0; */
           letter-spacing: 1px;
           &:hover{
               cursor: pointer;
+              color: white;
             }
     &::before{
     content: "";
@@ -98,6 +99,7 @@ border-bottom-left-radius : 0; */
     transition: all 0.4s cubic-bezier(1,-0.2,.25,.95);
     z-index: 3;
     opacity: 0.21;
+    z-index: -1;
    
 }
  }

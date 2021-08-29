@@ -1,19 +1,19 @@
 import React from 'react'
 import styled from 'styled-components';
+import Button from "@material-ui/core/Button";
 
 
-function Button({filter, button}) {
+function Buttons(props) {
+const {filter, button}  = props;
     return (
-        <ButtonsStyled>
-           {
-              button.map((but, i) => {
-              return <ButtonStyled key={i} onClick={() => filter(but)} >
+        <>
+           {button.map((but, i) => (
+               <Button  color="primary" key={i} onClick={() => filter(but)} >
                   {but}
-              </ButtonStyled >
-              }) 
-           } 
-        </ButtonsStyled>
-    )
+              </Button >
+              ))}
+        </>
+    );
 }
 const ButtonStyled = styled.button`
    outline: none;
@@ -24,6 +24,7 @@ const ButtonStyled = styled.button`
    color: white;
    cursor: pointer;
    transition: all .4s ease-in-out;
+   margin-bottom: .6rem;
    &:active ,&:focus{
        background-color: var(--primary-color);
    }
@@ -35,7 +36,7 @@ const ButtonStyled = styled.button`
    }
 `;
 const ButtonsStyled = styled.div`
-margin-bottom: 2rem;
+margin-bottom: 3rem;
  display: flex;
 justify-content: space-around;
  align-items: center;
@@ -45,4 +46,4 @@ margin : 2.4rem, auto;
 
 
 `;
-export default Button;
+export default Buttons;

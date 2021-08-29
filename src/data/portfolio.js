@@ -12,7 +12,7 @@ const portfolio = [
      category: 'React',
      image: port1,
      link1:'https//www.google.com',
-     link2:'https//www.google.com',
+     link2:'https://en.wikipedia.org/wiki/React',
      title: 'How to use React',
      text : 'Number one programming language'
 },

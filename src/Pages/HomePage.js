@@ -13,10 +13,10 @@ function HomePage() {
               <Particle />
             </div>
             <div className="typography">
-       <h1>Hi I'm <span>Lorem Ipsum</span></h1>
-        <p>Lorem Ipsum is simply dummy text of the printing
-            industry. 
-            when an unknown took a galley of  specimen book.
+       <h1>Hello, <span>I'am Archana</span></h1>
+        <p>Seeking to join an organization, this will utilize my abilities to the maximum, while providing me a wide exposure, 
+            sufficient responsibilities, independence of thoughts and opportunity to learn. My personal
+             and professional growth should be tandem with the organization
         </p>
         <div className="icons">
             <a href="https://www.facebook.com/" className=" icon i-facebook">
@@ -39,6 +39,12 @@ const HomePageStyled = styled.header`
  height: 100vh;
 position: relative;
 
+@media screen and (max-width: 520px){
+  h1{
+      font-size: 10px;
+     
+  }
+}
  .p-particle-con{
      position: absolute;
      top: 0;
@@ -53,7 +59,9 @@ position: relative;
      transform: translate(-50%, -50%);
      text-align: center;
      width: 80%;
-
+    span{
+        font-size: 2.5rem;
+    }
      .icons{
          display: flex;
          justify-content: center;

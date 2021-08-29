@@ -43,6 +43,14 @@ const MenuItemStyled = styled.div`
 display: grid;
 grid-template-columns: repeat(3, 1fr);
 grid-gap: 2rem;
+@media screen and (max-width: 920px ){
+    grid-template-columns: repeat(2, 1fr);
+
+}
+@media screen and (max-width: 670px ){
+    grid-template-columns: repeat(1, 1fr);
+
+}
 
 .grid-item{
     .portfolio-content{
@@ -59,7 +67,9 @@ grid-gap: 2rem;
 
         }
         ul{
-            display: none;
+          display: none;
+            transform: translate(-100px);
+            transition: all .4s ease-in-out;
           
         }
         .portfolio-image{
@@ -77,6 +87,7 @@ grid-gap: 2rem;
             }
             .portfolio-image:hover{
                 ul{
+                    transform: translateY(0);
                     display:block;
                     position: absolute;
                     left: 50%;
@@ -86,13 +97,31 @@ grid-gap: 2rem;
                     align-items: center;
                     justify-content:center ;
                     li{
-                        background-color: blue;
+                        background-color: var(--border-color);
                         display: flex;
                         align-items: center;
                         justify-content:center ;
                         padding: 1rem;
                         border-radius: 50%;
-                       margin:0;
+                        width: 3rem;
+                     height: 3rem;
+                       margin:0  .5rem;
+                       transition: all .4s ease-in-out;
+                       &:hover{
+                           background-color: var(--primary-color);
+                       }
+                       a{
+                        display: flex;
+                        align-items: center;
+                        justify-content:center ;
+                        transition: all .4s ease-in-out;
+                       }
+                    }
+
+                    li:hover{
+                        svg{
+                           color: white;
+                        }
                     }
                     svg{
                         font-size: 2rem;

@@ -25,7 +25,13 @@ function SkillsSection({skill,progress,width}) {
 const SkillsSectionStyled = styled.section`
 .SkillsSection{
     /* margin:4.5rem 0; */
-
+    /* display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 2rem;
+        grid-column-gap: 3rem;
+        @media screen and (max-width: 700px){
+            grid-template-columns: repeat(1, 1fr);
+        } */
 .skills-container{
     margin: 4rem 0 ;
    

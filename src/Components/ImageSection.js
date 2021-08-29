@@ -10,24 +10,30 @@ function ImageSection() {
             <img src={resume} alt=""/>
             </div>
             <div className="right-content">
-            <h4>Archana <span> Archu K</span></h4>
+            <h4>Archana <span>  K</span></h4>
              <p className="paragraph">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eleifend ipsum et ante aliquet finibus.
-        Duis magna diam, pulvinar ornare lorem quis, sagittis convallis velit.
+             Seeking to join an organization, this will utilize my abilities to the maximum, while providing me a wide exposure, sufficient responsibilities, independence of thoughts and opportunity to learn. My personal and professional
+              growth should be tandem with the organization.
          </p>
          <div className="about-info">
          <div className="info-title">
              <p>Full Name</p>
              <p>Age</p>
+             <p>D.O.B</p>
+             <p>Gender</p>
              <p>Nationality</p>
-             <p>Languages</p>
+             <p>Marital status</p>
+             <p>Language proficiency</p>
              <p>Location</p>
              <p>Service</p>
            </div>  
            <div className="info">
              <p>:Archana</p>
              <p>:23</p>
-             <p>:Hindu</p>
+             <p>:11/01/1998</p>
+             <p>Female</p>
+             <p>:Indian</p>
+             <p>Married</p>
              <p>:English, Tamil and Kannada</p>
              <p>:Bangalore</p>
              <p>:Fresher</p>
@@ -44,6 +50,12 @@ const ImageSectionStyled = styled.div`
 margin-top: 5rem;
 display: flex;
 margin-top: 4rem;
+ @media screen and (max-width: 1000px){
+  flex-direction: column ;
+  .left-content{
+      margin-bottom:2rem ;
+  }
+ }
 .left-content{
     width: 100%;
     /* height: 60vh; */
@@ -58,7 +70,7 @@ margin-top: 4rem;
     width: 100%;
     h4{
         font-size: 2rem;
-        color:  var(--white-color);
+        color: white;
         span{
             font-size: 2rem;
         
