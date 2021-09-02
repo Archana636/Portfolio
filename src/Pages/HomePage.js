@@ -13,7 +13,7 @@ function HomePage() {
               <Particle />
             </div>
             <div className="typography">
-       <h1>Hello, <span>I'am Archana</span></h1>
+       <h1>Hi, <span>I'am Archana</span></h1>
         <p>Seeking to join an organization, this will utilize my abilities to the maximum, while providing me a wide exposure, 
             sufficient responsibilities, independence of thoughts and opportunity to learn. My personal
              and professional growth should be tandem with the organization
