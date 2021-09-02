@@ -6,16 +6,23 @@ import Button from "@material-ui/core/Button";
 function Buttons(props) {
 const {filter, button}  = props;
     return (
+       
         <>
            {button.map((but, i) => (
-               <Button  color="primary" key={i} onClick={() => filter(but)} >
+               <Button1>
+                   <Button2>
+               <Button color="primary" key={i} onClick={() => filter(but)} >
                   {but}
               </Button >
+              </Button2>
+              </Button1>
               ))}
+              
         </>
     );
 }
-const ButtonStyled = styled.button`
+const Button1 = styled.button`
+   
    outline: none;
    border: none;
    background-color: var(--background-light-color-2);
@@ -35,8 +42,8 @@ const ButtonStyled = styled.button`
        margin-right: .6rem;
    }
 `;
-const ButtonsStyled = styled.div`
-margin-bottom: 3rem;
+const Button2 = styled.div` 
+margin-bottom: 0.5rem;
  display: flex;
 justify-content: space-around;
  align-items: center;
