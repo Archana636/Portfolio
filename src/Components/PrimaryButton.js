@@ -2,10 +2,15 @@ import React from 'react'
 import styled from 'styled-components';
 
 
-function PrimaryButton({title}) {
+
+function PrimaryButton({title,icon}) {
     return (
+        
         < PrimaryButtonStyled>
+        
             {title}
+            {icon}
+            
         </ PrimaryButtonStyled>
     )
 }

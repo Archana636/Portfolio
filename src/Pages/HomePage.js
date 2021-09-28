@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import FacebookIcon from '@material-ui/icons/Facebook';
+import TwitterIcon from '@material-ui/icons/Twitter';
 import GithubIcon from '@material-ui/icons/GitHub';
 import LinkedinIcon from '@material-ui/icons/LinkedIn';
 import Particle from '../Components/Particles';
@@ -19,8 +19,8 @@ function HomePage() {
              and professional growth should be tandem with the organization
         </p>
         <div className="icons">
-            <a href="https://www.facebook.com/" className=" icon i-facebook">
-                <FacebookIcon/>
+            <a href="https://twitter.com/Archana01179986?s=08" className=" icon i-facebook">
+                <TwitterIcon/>
             </a>
             <a href="https://github.com/Archana636/task0001" className="icon i-github">
                 <GithubIcon/>

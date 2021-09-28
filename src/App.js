@@ -12,6 +12,8 @@ import Switch from '@material-ui/core/Switch'
 import { useState, useEffect } from "react";
 import MenuIcon from '@material-ui/icons/Menu';
 import { IconButton } from "@material-ui/core";
+import 'bootstrap/dist/css/bootstrap.min.css'
+
 
 
 

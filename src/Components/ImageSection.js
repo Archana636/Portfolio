@@ -1,7 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 import resume from '../img/resume.jpg';
-import PrimaryButton from './PrimaryButton';
+import { Button } from 'react-bootstrap';
+// import PrimaryButton from './PrimaryButton';
+import GetAppIcon from '@material-ui/icons/GetApp';
+
+
+
+
 
 function ImageSection() {
     return (
@@ -22,7 +28,7 @@ function ImageSection() {
              <p>D.O.B</p>
              <p>Gender</p>
              <p>Nationality</p>
-             <p>Marital status</p>
+             {/* <p>Marital status</p> */}
              <p>Language proficiency</p>
              <p>Location</p>
              <p>Service</p>
@@ -33,16 +39,23 @@ function ImageSection() {
              <p>:11/01/1998</p>
              <p>Female</p>
              <p>:Indian</p>
-             <p>Married</p>
+             {/* <p>Married</p> */}
              <p>:English, Tamil and Kannada</p>
              <p>:Bangalore</p>
              <p>:Fresher</p>
             
            </div>   
          </div>
-         <PrimaryButton title={'Download CV'}/>
-            </div>
+         {/* <PrimaryButton
+        
+          title={'Download '}icon={<GetAppIcon/>}/> */}
+         {/* <PrimaryButton */}
+            <a className='btn btn-sm btn-success mt-3' rel="noreferrer" href='https://drive.google.com/file/d/1tFwwYV1JeQ6agkiBPxdps_k6j5xcMPbj/view?usp=sharing' target='_blank'><Button>Download <GetAppIcon/> </Button> <i class="fad fa-download"></i> </a>
+            
+          </div>
+           
         </ ImageSectionStyled>
+        
     )
 }
 
@@ -98,6 +111,7 @@ margin-top: 4rem;
 
     }
 }
+
 
 
 `;
