@@ -10,5 +10,5 @@ function ResumePage() {
     )
 }
 
-export default ResumePage;
+export default ResumePage; 
 

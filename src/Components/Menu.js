@@ -2,7 +2,8 @@
 import React from 'react'
 import styled from 'styled-components';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import PinterestIcon from '@material-ui/icons/Pinterest';
+// import PinterestIcon from '@material-ui/icons/Pinterest';
+import Button from '@material-ui/core/Button'
 
 function Menu({menuItem}) {
     return (
@@ -13,16 +14,21 @@ function Menu({menuItem}) {
                 return <div className="grid-item" key={item.id}>
                 <div className="portfolio-content">
                  <div className="portfolio-image">
-                      <img src={item.image} alt=""/>
+                      <img src={item.image} alt="" target='_blank'/>
                       <ul>
                          <li>
-                         <a href={item.link1}>
+                         {/* <a href={item.link1}> */}
+                                                
                           <GitHubIcon/>
-                         </a>
+                         {/* </a> */}
                          </li>
                          <li>
                          <a href={item.link2}>
-                             <PinterestIcon/>
+                             {/* <PinterestIcon/> */}
+                             <Button>Demo</Button>
+                             {/* <a className='bth btn-sm btn-success ml-3' target='_blank' rel="noreferrer" href='https://vast-castle-62530.herokuapp.com/'>Website <i class="fad fa-link"></i></a>  */}
+                             {/* <a className='btn btn-sm btn-success mt-3' rel="noreferrer" href='https://vast-castle-62530.herokuapp.com/' target='_blank'><Button>DEMO  </Button>  </a> */}
+                           
                          </a>
                          </li>
                          </ul>
@@ -104,11 +110,11 @@ grid-gap: 2rem;
                         padding: 1rem;
                         border-radius: 50%;
                         width: 3rem;
-                     height: 3rem;
+                        height: 3rem;
                        margin:0  .5rem;
                        transition: all .4s ease-in-out;
                        &:hover{
-                           background-color: var(--primary-color);
+                           background-color: var(#edeff2);
                        }
                        a{
                         display: flex;
